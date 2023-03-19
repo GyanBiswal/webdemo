@@ -73,6 +73,7 @@
     margin-left:700px;
     margin-top: -260px;
 }
+
 .box-2{
     height: 300px;
     width: 300px;
@@ -80,6 +81,17 @@
     display: flex;
     margin-left:650px;
     margin-top: -260px;
+    animation: rotation;
+    animation-duration: 2s;
+    animation-iteration-count:infinite ;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
 }
 
 .contact-me , .learn-more{
@@ -227,7 +239,12 @@
     font-size: 30px;
     padding: 8px 30px;
     border-radius: 4px;
+    position: relative;
+    animation: ownStyle1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
+
 .css{
     height: 50px;
     width: 250px;
@@ -239,6 +256,10 @@
     font-size: 30px;
     padding: 8px 30px;
     border-radius: 4px;
+    position: relative;
+    animation: ownStyle1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .javascript{
     height: 50px;
@@ -251,9 +272,38 @@
     font-size: 30px;
     padding: 8px 30px;
     border-radius: 4px;
+    position: relative;
+    animation: ownStyle1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes ownStyle1 {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 250px;
+    }
+}
+
+
 .javascript span{
     color:rgb(42, 143, 42) ;
+    animation: ownStyle2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes ownStyle2 {
+    from{
+        opacity: 0%;
+        margin-left:-150px;
+    }
+    to{
+        opacity: 100%;
+        margin-left: 0px;
+    }
+    
 }
 .hire{
     height: 40px;
